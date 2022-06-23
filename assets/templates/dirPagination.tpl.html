@@ -1,0 +1,15 @@
+<div class="ui pagination menu" ng-if="1 < pages.length || !autoHide">
+    <a class="item" ng-if="boundaryLinks" ng-class="{ disabled : pagination.current == 1 }" ng-click="setCurrent(1)" href="javascript:void(0);">
+        &laquo;
+    </a>
+    <a ng-if="directionLinks" ng-class="{ disabled : pagination.current == 1 }" class="item" ng-click="setCurrent(pagination.current - 1)" href="javascript:void(0);">
+        &lsaquo;
+    </a>
+    <a ng-repeat="pageNumber in pages track by tracker(pageNumber, $index)" ng-class="{ active : pagination.current == pageNumber, disabled : pageNumber == '...' }" class="item"ng-click="setCurrent(pageNumber)" href="javascript:void(0);">{{ pageNumber}}</a>
+    <a ng-if="directionLinks" ng-class="{ disabled : pagination.current == pagination.last }" class="item" ng-click="setCurrent(pagination.current + 1)" href="javascript:void(0);">
+        &rsaquo;
+    </a>
+    <a class="item" ng-if="boundaryLinks"  ng-class="{ disabled : pagination.current == pagination.last }" ng-click="setCurrent(pagination.last)" href="javascript:void(0);">
+        &raquo;
+    </a>
+</div>

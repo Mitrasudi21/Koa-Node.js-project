@@ -1,0 +1,1 @@
+function updateNumber(){$.ajax({type:"POST",url:"/random.json",data:{foo:"bar"},success:function(a){$("#randomStatVal").html(a.number)},dataType:"json"})}

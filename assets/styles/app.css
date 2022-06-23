@@ -1,0 +1,337 @@
+.page-name {
+    display: none;
+    margin-top: 0.5em;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.hidden.menu {
+    display: none;
+}
+
+.masthead.segment {
+    min-height: 700px;
+    padding: 1em 0em;
+}
+
+.masthead .logo.item img {
+    margin-right: 1em;
+}
+
+.masthead .ui.menu .ui.button {
+    margin-left: 0.5em;
+}
+
+.masthead h1.ui.header {
+    margin-top: 3em;
+    margin-bottom: 0em;
+    font-size: 4em;
+    font-weight: normal;
+}
+
+.masthead h2 {
+    font-size: 1.7em;
+    font-weight: normal;
+}
+
+.ui.vertical.stripe {
+    padding: 8em 0em;
+}
+
+.ui.vertical.stripe h3 {
+    font-size: 2em;
+}
+
+.ui.vertical.stripe .button + h3,
+.ui.vertical.stripe p + h3 {
+    margin-top: 3em;
+}
+
+.ui.vertical.stripe .floated.image {
+    clear: both;
+}
+
+.ui.vertical.stripe p {
+    font-size: 1.33em;
+}
+
+.ui.vertical.stripe .horizontal.divider {
+    margin: 3em 0em;
+}
+
+.quote.stripe.segment {
+    padding: 0em;
+}
+
+.quote.stripe.segment .grid .column {
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+.footer.segment {
+    padding: 5em 0em;
+}
+
+.secondary.pointing.menu .toc.item {
+    display: none;
+}
+
+.ui.feed>.invoice-list.event .pkg-icon.label {
+    border-left: none;
+}
+
+.ui.feed>.invoice-list.event>.label>img {
+    background-color: inherit;
+}
+
+.ui.feed>.invoice-list.event>.label>img.active {
+    background-color: rgba(28, 179, 34, 0.81);
+}
+
+.ui.feed>.invoice-list.event>.label>img.inactive {
+    background-color: rgba(241, 52, 6, 0.81);
+}
+
+.ui.feed>.invoice-list.event>.content .user {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.ui.feed>.invoice-list.event>.content .meta {
+    display: table-cell;
+}
+
+.ui.feed>.invoice-list.event .separator {
+    height: 14px;
+    width: 14px;
+    float: left;
+}
+
+.ui.feed>.invoice-list.event .tag.label {
+    float: left;
+}
+
+.ui.feed>.invoice-list.event>.content .mini.summary {
+    font-size: 0.8em;
+    color: #4c4040;
+}
+
+.ui.cards>.card>.content>.header:not(.ui) {
+    font-size: 1.2em;
+}
+
+.icpl-checkbox input {
+    display: none;
+}
+
+.icpl-checkbox span {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background: url("/images/unchecked.png");
+}
+
+.icpl-checkbox input:checked + span {
+    background: url("/images/checked.png");
+}
+.icpl-checkbox-l input {
+    display: none;
+}
+.icpl-checkbox-l span {
+    width: 62px;
+    height: 30px;
+    display: inline-block;
+    background: url("/images/toggle-l-off.png");
+}
+
+.icpl-checkbox-l input:checked + span {
+    background: url("/images/toggle-l-on.png");
+}
+
+label.fake-toggle {
+    width: fit-content;
+}
+
+.fake-toggle input {
+    display: none;
+}
+
+.fake-toggle span {
+    cursor: pointer;
+    width: 54px;
+    height: 27px;
+    display: inline-block;
+    background: url("/images/toggle-off.png");
+}
+
+.fake-toggle input:checked + span {
+    background: url("/images/toggle-on.png");
+}
+
+.strong-lable {
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.ui.inverted.dimmer {
+    background-color: rgba(11, 24, 11,.85);
+}
+/* 
+.ui.inverted.menu {
+    background: rgb(1,165,136);
+}*/
+
+.ui.placeholder {
+    position: static;
+    overflow: hidden;
+    -webkit-animation: placeholderShimmer 0.5s linear;
+    animation: placeholderShimmer 0.5s linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    background-color: #fff;
+    background-image: -webkit-gradient(linear,left top, right top,color-stop(0, rgba(0,0,0,.08)),color-stop(15%, rgba(0,0,0,.15)),color-stop(30%, rgba(0,0,0,.08)));
+    background-image: linear-gradient(to right,rgba(0,0,0,.08) 0,rgba(0,0,0,.15) 15%,rgba(0,0,0,.08) 30%);
+    background-size: 1200px 100%;
+    max-width: 30rem;
+}
+
+.ui.appcolor.button, .ui.appcolor.buttons .button {
+    background-color: #01a588;
+    color: #1b1c1d;;
+    text-shadow: none;
+    background-image: -webkit-gradient(linear,left top, left bottom,from(transparent),to(rgba(0,0,0,.05)));
+    background-image: linear-gradient(transparent,rgba(0,0,0,.05));
+}
+.ui.basic.appcolor.button{
+    background: 0 0!important;
+    -webkit-box-shadow: 0 0 0 1px #01a588 inset!important;
+    box-shadow: 0 0 0 1px #01a588 inset!important;
+    color: #01a588!important;
+}
+.outer.date {
+    padding-top: 5px !important;
+}
+.margin-top-10 {
+    margin-top: 10px !important;
+}
+.red-border-bottom-7 {
+    border-bottom: 7px solid red;
+}
+
+.red-bg {
+    background: red;
+}
+
+.ui.form .field>label.secondary {
+    display: block;
+    margin: 0 0 .28571429rem 0;
+    color: rgba(0,0,0,.4);
+    font-size: .71429em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+[ng\:cloak], [ng-cloak], .ng-cloak {
+    display: none !important;
+}
+
+.repeat-input{
+    width: 100%;
+    height: 28px;
+    border: none;
+    border-bottom: 0.5px solid rgba(0,0,0,0.3);
+}
+
+input.repeat-input:focus {
+    outline:none !important;
+}
+
+.unstyled::-webkit-inner-spin-button, .unstyled::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+.secondary-field .selectize-input {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 10px;
+    padding-left: 2px;
+}
+.secondary-field .selectize-control.single .selectize-input:after {
+    visibility:hidden;
+}
+.secondary-field .selectize-dropdown .option {
+    padding-left: 2px;
+    font-size: 10px;
+}
+
+.low-opacity{
+    opacity: 0.35 !important;
+}
+
+.selectize-dropdown .active {
+    background-color: rgba(0,0,0, 0.5);
+    color: #fff
+}
+.card.invoice .extra.content {
+    display: none !important;
+}
+
+.card.invoice .content .header {
+    font-size: 1em !important;
+}
+
+.card.invoice .extra.content {
+    display: none !important;
+}
+
+.card.invoice.selected .extra.content {
+  display: unset !important;
+}
+
+.wrap { 
+    white-space: pre-wrap;      /* CSS3 */   
+    white-space: -moz-pre-wrap; /* Firefox */    
+    white-space: -pre-wrap;     /* Opera <7 */   
+    white-space: -o-pre-wrap;   /* Opera 7 */    
+    word-wrap: break-word;      /* IE */
+ }
+
+@media only screen and (max-width: 700px) {
+    .secondary.pointing.menu .item,
+    .secondary.pointing.menu .menu {
+        display: none;
+    }
+    .secondary.pointing.menu .toc.item {
+        display: block;
+    }
+    .page-name {
+        display: block;
+    }
+    .masthead.segment {
+        min-height: 350px;
+    }
+    .masthead h1.ui.header {
+        font-size: 2em;
+        margin-top: 1.5em;
+    }
+    .masthead h2 {
+        margin-top: 0.5em;
+        font-size: 1.5em;
+    }
+    .ui.feed>.invoice-list.event .pkg-icon.label {
+        width: 0px;
+        margin-left: 1.3em;
+    }
+    .ui.feed>.invoice-list.event>.content .summary {
+        margin-left: 15px;
+    }
+    .outer.date {
+        margin-left: 15px !important;
+    }
+    .ui.feed>.invoice-list.event>.label+.content {
+        margin: .75em 0 1em .75em;
+    }
+    .ui.stackable.grid>.invoices.column:not(.row) {
+        padding: 0!important;
+    }
+}
