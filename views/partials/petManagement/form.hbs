@@ -1,0 +1,25 @@
+<form class="ui form" id="model_form" style="margin-bottom: 20px;">
+  <div class="field">
+    <label>Name *<span class="parsley-error-custom name"></span></label>
+    <div class="twelve wide field">
+      <div class="field">
+        <input name="name" autocomplete="none" type="text" ng-model="currentPet.name" required minlength="2" data-parsley-errors-container=".parsley-error-custom.name">
+      </div>
+    </div>
+  </div>
+  <div class="field">
+    <label>Pet Type *<span class="parsley-error-custom petType"></span></label>
+    <div class="twelve wide field">
+      <div class="field">
+      <select class="repeat-input" style="background: #fff;" name="type" ng-model="currentPet.petType" data-parsley-errors-container=".parsley-error-custom.petType">
+        <option value="">Select</option>
+        <option value="CAT">Cat</option>
+        <option value="DOG">Dog</option>
+        <option value="OTHER">Other</option>
+      </select>
+      </div>
+    </div>
+  </div>
+</form>
+    
+    

@@ -1,0 +1,42 @@
+<form class="ui form" id="model_form" style="margin-bottom: 20px;">
+  <div class="field">
+    <label>Name *<span class="parsley-error-custom name"></span></label>
+    <div class="twelve wide field">
+      <div class="field">
+        <input name="name" autocomplete="none" type="text" ng-model="currentStudent.name" required minlength="2" data-parsley-errors-container=".parsley-error-custom.name">
+      </div>
+    </div>
+  </div>
+  <div class="field">
+    <label>Gender *<span class="parsley-error-custom studentType"></span></label>
+    <div class="twelve wide field">
+      <div class="field">
+      <select class="repeat-input" style="background: #fff;" name="type" ng-model="currentStudent.gender" data-parsley-errors-container=".parsley-error-custom.gender">
+        <option value="">Select</option>
+        <option value="MALE">MALE</option>
+        <option value="FEMALE">FEMALE</option>
+        <option value="OTHER">Other</option>
+      </select>
+      </div>
+    </div>
+  </div>
+  <div class="field">
+    <label>Pet <span class="parsley-error-custom studentPet"></span></label>
+    <div class="twelve wide field">
+      <div class="field">
+      <select class="repeat-input" style="background: #fff;" name="type" ng-model="currentStudent.pet" data-parsley-errors-container=".parsley-error-custom.pet">
+        <option value="">Select</option>
+        <option ng-repeat="pet in pets" value="\{{pet._id}}">\{{pet.name}}</option>
+      </select>
+      </div>
+    </div>
+  </div> 
+  {{!-- <div>
+    <input type="file" ngf-select="SelectFile(file)" />
+    <input type="button" value="Upload" ng-click="Upload()" />
+  </div> --}}
+  <div>
+  <input type="file" name="myFile" id="myFile" multiple/>
+  <input type="button" value="Upload" ng-click ="fileUpload($event)">
+</div>
+</form>

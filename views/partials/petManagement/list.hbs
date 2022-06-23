@@ -1,0 +1,67 @@
+
+<div class="ui floating warning message" ng-if="pets.length == 0">
+  <div class="header">
+    Currently there are no pet
+  </div>
+  <a ui-sref="create">Click here</a> to create a pet.
+</div>
+<div class="ui" ng-if="pets.length > 0" style="margin-top: 20px;">
+  <div class="content">
+    <div class="ui">
+      <form class="ui form">
+        <div class="fields">
+          <div class="twelve wide field">
+            <div class="ui icon input">
+              <input type="text" name="name" placeholder="Search pets" ng-model="petSearch">
+              <i class="search icon"></i>
+            </div>
+          </div>
+          <div class="four wide field">
+            <!--<div class="ui labeled green icon button" ng-click="exportDataInExcel();">
+              <i class="file excel icon"></i> Export
+            </div>-->
+          </div>
+        </div>
+      </form>
+      <div style="height: 5px;"></div>
+      <div class="scrable_table">
+
+        <table class="ui unstackable table data_table">
+          <thead>
+          <tr>
+            <th>Name</th>
+            <th>Active</th>
+            <th>Action</th>
+            <th>Delete</th>
+            <th style="width: 30px;"></th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr dir-paginate="pet in pets | filter:petSearch | itemsPerPage:20">
+            <td>\{{pet.name}}</td>
+            <td>
+              <div class="user-list ui toggle checkbox read-only" ng-class="pet.isActive?'checked ' + pet._id:pet._id" ng-click="setEnableddisabled(pet);">
+                <input id="\{{pet._id}}" type="checkbox" ng-checked="pet.isActive" onclick="return false;">
+                <label></label>
+              </div>
+            </td>
+            <td>
+              <i title="Pet Details" class="large folder open link icon" ng-click="navUpdate(pet);"></i>
+            </td>
+            <td>
+              <input type="button" value="Remove"  ng-click="deletePet(pet);">
+            </td>
+            </td>
+            <td style="width: 30px;">
+              <i class="notched circle loading icon" style="visibility: hidden;"></i>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+        <dir-pagination-controls max-size="7" direction-links="true" boundary-links="true">
+        </dir-pagination-controls>
+      </div>
+    </div>
+  </div>
+</div>
+    

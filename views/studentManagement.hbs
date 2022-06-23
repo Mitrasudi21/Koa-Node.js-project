@@ -1,0 +1,33 @@
+{{> header}}
+<script type="text/javascript" nonce="2726c7f26c">
+    {{{ _initVariable 'students' students}}}
+    {{{ _initVariable 'pets' pets}}}
+</script>
+<div class="ui secondary pointing fluid menu">
+    <h2 style="margin-left: 30px;" class="ui header">Student Management</h2>
+
+    <div class="right menu inner-nav-menu">
+        <a class="ui item inner-nav-menu-list" href="student-management.html#/list">
+            Students
+        </a>
+        <a class="ui item inner-nav-menu-create" href="student-management.html#/create">
+            Create
+        </a>
+        <a class="ui item inner-nav-menu-update" href="student-management.html#/update">
+          Details
+        </a>
+    </div>
+</div>
+<div class="ui container" ui-view="main" style="text-align: start;">
+</div>
+<div style="display: block; height: 20px;width: 100%"></div>
+<script type="text/ng-template" id="/list.tpl.html">
+    {{> studentManagement/list}}
+</script>
+<script type="text/ng-template" id="/create.tpl.html">
+    {{> studentManagement/create}}
+</script>
+<script type="text/ng-template" id="/update.tpl.html">
+    {{> studentManagement/update}}
+</script>
+{{> footer}}
